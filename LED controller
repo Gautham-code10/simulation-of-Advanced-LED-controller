@@ -22,7 +22,7 @@ void initLEDGroup(LEDGroup *group) {
     group->singleLED.brightness = 0;         // Minimum brightness
     group->singleLED.color = 0x000000;       // No color (Black)
     
-// Initialize the group settings
+    // Initialize the group settings
     group->groupState = 0;                   // All OFF
     group->groupBrightness = 0;              // Minimum brightness
 }
