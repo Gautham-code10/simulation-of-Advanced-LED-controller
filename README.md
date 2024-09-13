@@ -22,7 +22,7 @@ void initLEDGroup(LEDGroup *group) {
     group->singleLED.brightness = 0;         // Minimum brightness
     group->singleLED.color = 0x000000;       // No color (Black)
     
-    // Initialize the group settings
+// Initialize the group settings
     group->groupState = 0;                   // All OFF
     group->groupBrightness = 0;              // Minimum brightness
 }
@@ -35,13 +35,11 @@ void updateLEDGroupSettings(LEDGroup *group,
                             uint8_t brightness, 
                             uint32_t color) {
     
-    group->groupState = groupState;
-    group->groupBrightness = groupBrightness;
-
-   
-    group->singleLED.state = state;
-    group->singleLED.brightness = brightness;
-    group->singleLED.color = color;
+     group->groupState = groupState;
+     group->groupBrightness = groupBrightness;
+     group->singleLED.state = state;
+     group->singleLED.brightness = brightness;
+     group->singleLED.color = color;
 }
 
 
